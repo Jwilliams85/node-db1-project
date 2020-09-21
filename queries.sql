@@ -18,18 +18,11 @@ order by OrderDate desc
 limit 10;
 
 -- Find all customers that live in London, Madrid, or Brazil
-SELECT CustomerName, Country 
-FROM  Customers
-WHERE country = 'London';
+SELECT * from customer
+Where city in ('London', 'Madrid', 'Brazil')
 
 
-SELECT CustomerName, Country 
-FROM  Customers
-WHERE country = 'Madrid';
 
-SELECT CustomerName, Country 
-FROM  Customers
-WHERE country = 'Brazil';
 
 
 -- Add a customer record for "The Shire", the contact name is "Bilbo Baggins" the address is -"1 Hobbit-Hole" in "Bag End", postal code "111" and the country is "Middle Earth"
